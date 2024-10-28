@@ -19,6 +19,9 @@ def hack():
     print(navn)
     return 'Funka'
 
+@app.route('/milk')
+def milk():
+    return render_template('website.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
